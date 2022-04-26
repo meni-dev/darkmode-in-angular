@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dark-mode-in-angular';
+  isDarkTheme = false;
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+  }
 }
