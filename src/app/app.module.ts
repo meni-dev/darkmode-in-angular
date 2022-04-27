@@ -8,9 +8,16 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
+import { RegisterComponent } from './register/register.component';
+import { RegisterFormComponent } from './register/register-form/register-form.component';
+import { RegisterListComponent } from './register/register-list/register-list.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RegisterComponent,
+    RegisterFormComponent,
+    RegisterListComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +26,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatCardModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
 
   ],
   providers: [],

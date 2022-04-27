@@ -1,0 +1,6 @@
+<p>register-form works!</p>
+<form #addRegisterForm="ngForm" (submit)="addRegister(addRegisterForm)">
+    <input type="text">
+    <br />
+    <button type="submit" [disabled]="!addRegisterForm.valid">Add </button>
+</form>
